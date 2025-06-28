@@ -12,7 +12,7 @@ Este é um **template base** para projetos em React Native, configurado com **Ex
 - [React Navigation v7](https://reactnavigation.org/)
 - [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/)
 - [React Native Screens](https://reactnavigation.org/docs/using-screens/)
-- [Expo Router (opcional)](https://expo.github.io/router/docs)
+
 
 ---
 
@@ -21,8 +21,8 @@ Este é um **template base** para projetos em React Native, configurado com **Ex
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/mrcomputer2018/expo-configuracao-inicial.git
+cd expo-configuracao-inicial
 ````
 
 2. **Instale as dependências:**
