@@ -45,7 +45,6 @@ npx expo start
 
 ```
 .
-├── app/               # Telas e rotas (se usar Expo Router)
 ├── src/
 │   ├── components/    # Componentes reutilizáveis
 │   ├── navigation/    # Configuração das rotas
