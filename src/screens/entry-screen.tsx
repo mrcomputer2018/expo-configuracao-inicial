@@ -1,34 +1,41 @@
-import { View, Text, SafeAreaView, ImageBackground } from "react-native";
-import { globalStyles } from "../styles/global-styles";
-import LogoImage from "../components/logo-image";
 import { StatusBar } from "expo-status-bar";
-import CustomButton from "../components/custom-button";
+import { View, Text, ImageBackground, Image } from "react-native";
+import { globalStyles } from "../styles/globalStyles";
+import ButtonForm from "../components/button-form";
+import { entryStyles as styles } from "../styles/entry-styles";
 
-const image = require("../../assets/background.jpeg");
-
-export default function EntryScreen({navigation}: any) {
-    function handleNavigateToLogin() {
-        navigation.navigate("SignIn");
+export default function EntryScreen({ navigation }: any) {
+    function handleNavigationToLogin() {
+        navigation.navigate("Login");
     }
 
     return (
-        <SafeAreaView style={globalStyles.container}>
+        <ImageBackground
+            source={require("../../assets/background.jpeg")}
+            style={globalStyles.container}
+        >
             <StatusBar style="light" />
-            <ImageBackground
-                source={image}
-                resizeMode="cover"
-                style={globalStyles.imageBackground}
-            >
-                <LogoImage />
-                <Text style={globalStyles.text}>Bem-vindo ao nosso app!</Text>
-                <Text style={globalStyles.Title}>NextBite Food</Text>
-                <Text style={globalStyles.description}>
-                    O futuro da sua próxima refeição.
+
+            <View style={styles.areaText}>
+                <Image
+                    source={require("../../assets/logotipo.png")}
+                    style={styles.logo}
+                />
+
+                <Text style={styles.subtitle}>Bem-vindo ao</Text>
+
+                <Text style={styles.title}>NextBite Food</Text>
+
+                <Text style={styles.description}>
+                    O futuro da sua próxima refeição
                 </Text>
 
-                <CustomButton title="Entrar" action={handleNavigateToLogin} width={280}/>
-
-            </ImageBackground>
-        </SafeAreaView>
+                <ButtonForm
+                    textButton="Entrar"
+                    action={handleNavigationToLogin}
+                    withButton={280}
+                />
+            </View>
+        </ImageBackground>
     );
 }
