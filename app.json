@@ -1,34 +1,41 @@
 {
-  "expo": {
-    "name": "expo-lab365-food-delivery",
-    "slug": "expo-lab365-food-delivery",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#A0C9B7",
-      "width": 80
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.marcelo.ribeiro.dev.expolab365fooddelivery"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-asset"
-    ]
-  }
+    "expo": {
+        "name": "expo-lab365-food-delivery",
+        "slug": "expo-lab365-food-delivery",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "newArchEnabled": true,
+        "splash": {
+            "image": "./assets/splash-icon.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#A0C9B7",
+            "width": 80
+        },
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#A0C9B7"
+            },
+            "edgeToEdgeEnabled": true,
+            "package": "com.marcelo.ribeiro.dev.expolab365fooddelivery"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "plugins": [
+            "expo-asset",
+            [
+                "expo-splash-screen",
+                {
+                    "backgroundColor": "#A0C9B7",
+                    "image": "./assets/splash-icon.png",
+                }
+            ]
+        ]
+    }
 }

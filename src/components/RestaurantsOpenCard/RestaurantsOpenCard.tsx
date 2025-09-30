@@ -1,6 +1,7 @@
 import { View, Text, Image } from "react-native";
 import { restaurantOpenListStyles as styles } from "../../styles/restaurant-open-list-styles";
 import { Feather } from "@expo/vector-icons";
+import RestaurantImage from "./restaurant-image";
 
 interface RestaurantsOpenCardProps {
     id: string;
@@ -16,11 +17,7 @@ interface RestaurantsOpenCardProps {
 export default function RestaurantsOpenCard({...props}: RestaurantsOpenCardProps) {
     return (
         <View style={styles.restaurantCard}>
-            <Image
-                source={props.image as any }
-                style={styles.image}
-                resizeMode="cover"
-            />
+            <RestaurantImage image={props.image}/>
 
             <View style={styles.infoSection}>
                 <View>

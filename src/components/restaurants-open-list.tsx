@@ -1,6 +1,7 @@
 import { FlatList } from "react-native";
 import RestaurantsOpenCard from "./RestaurantsOpenCard/RestaurantsOpenCard";
 import { assets } from "../../assets/assets";
+import { restaurantOpenListStyles as styles } from "../styles/restaurant-open-list-styles";
 
 export default function RestaurantsOpenList() {
     // Dados dos restaurantes
@@ -44,6 +45,8 @@ export default function RestaurantsOpenList() {
             keyExtractor={(item) => item.id}
             style={{ marginTop: 10 }}
             scrollEnabled={false}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.containerCard}
         />
     );
-} 
+}
