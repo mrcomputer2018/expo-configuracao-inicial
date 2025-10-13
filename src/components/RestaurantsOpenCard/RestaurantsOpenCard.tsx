@@ -32,14 +32,14 @@ export default function RestaurantsOpenCard({...props}: RestaurantsOpenCardProps
 
                 <View style={styles.deliveryInfoSection}>
                     <View style={styles.container}>
-                        <Feather name="star" size={12} color="#66BE70" />
+                        <Feather name="star" size={16} color="#66BE70" />
                         <Text style={styles.textInfo}>{props.rating}</Text>
                     </View>
                     <View>
                         <Text style={styles.textInfo}>{props.deliveryInfo}</Text>
                     </View>
                     <View style={styles.container}>
-                        <Feather name="clock" size={12} color="#66BE70" />
+                        <Feather name="clock" size={16} color="#66BE70" />
                         <Text style={styles.textInfo}>{props.time}</Text>
                     </View>
                 </View>

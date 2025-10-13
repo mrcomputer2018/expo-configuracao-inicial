@@ -1,10 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const restaurantOpenListStyles = StyleSheet.create({
-    containerCard: {
-        alignItems: "center",
-        justifyContent: "center",
-    },
+export const restaurantCardStyles = StyleSheet.create({
     restaurantCard: {
         width: 384,
         marginHorizontal: 10,
@@ -16,15 +12,24 @@ export const restaurantOpenListStyles = StyleSheet.create({
         shadowOffset: { width: 1, height: 2 },
         shadowOpacity: 0.1,
         shadowRadius: 4,
-        elevation: 3
+        elevation: 3,
     },
+    sectionTitle: {
+        fontSize: 18,
+        fontWeight: "600",
+        marginTop: 24,
+        marginBottom: 12,
+        marginHorizontal: 16,
+        color: "#2c3e50",
+    },
+
     image: {
         width: "100%",
         height: 120,
     },
-    infoSection : {
+    infoSection: {
         paddingVertical: 14,
-        paddingHorizontal: 20
+        paddingHorizontal: 20,
     },
     restaurantName: {
         fontWeight: "bold",
@@ -45,7 +50,7 @@ export const restaurantOpenListStyles = StyleSheet.create({
     deliveryInfoSection: {
         flexDirection: "row",
         justifyContent: "space-between",
-        marginTop: 6,
+        marginTop: 10,
     },
     container: {
         flexDirection: "row",
@@ -55,8 +60,5 @@ export const restaurantOpenListStyles = StyleSheet.create({
     textInfo: {
         color: "#666",
         opacity: 0.8,
-        fontWeight: "bold",
-        fontSize: 16,
-    }
-
+    },
 });

@@ -40,7 +40,7 @@ export default function HomeScreen() {
                 <ScrollCategories />
 
                 <ScrollTitle.Root>
-                    <ScrollTitle.Title text="Restaurantes abertos" />
+                    <ScrollTitle.Title text="⭐ Restaurantes abertos" />
                     <ScrollTitle.Button
                         onPress={() => console.log("Clicado!!!")}
                     />
