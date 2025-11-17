@@ -20,7 +20,7 @@ export const restaurantOpenListStyles = StyleSheet.create({
     },
     image: {
         width: "100%",
-        height: 120,
+        height: 100,
     },
     infoSection : {
         paddingVertical: 14,
@@ -45,7 +45,7 @@ export const restaurantOpenListStyles = StyleSheet.create({
     deliveryInfoSection: {
         flexDirection: "row",
         justifyContent: "space-between",
-        marginTop: 6,
+        marginTop: 0,
     },
     container: {
         flexDirection: "row",

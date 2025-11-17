@@ -5,8 +5,8 @@ import Material from "@expo/vector-icons/MaterialCommunityIcons"
 import HeaderRight from "../components/header-right";
 import ProfileScreen from "../screens/profile-screen";
 import HeaderLeft from "../components/header-left";
-import TestScreen from "../screens/test-screen";
 import NotificationScreen from "../screens/notification-screen";
+import CartScreen from "../screens/cart-screen";
 
 export default function HomeBottomTab() {
     const BottomTab = createBottomTabNavigator();
@@ -40,7 +40,7 @@ export default function HomeBottomTab() {
                 }}
             />
             <BottomTab.Screen
-                name="Search"
+                name="Pesquisa"
                 component={SearchScreen}
                 options={{
                     headerShown: true,
@@ -50,7 +50,7 @@ export default function HomeBottomTab() {
                 }}
             />
             <BottomTab.Screen
-                name="Profile"
+                name="Perfil"
                 component={ProfileScreen}
                 options={{
                     headerShown: true,
@@ -61,12 +61,23 @@ export default function HomeBottomTab() {
             />
 
             <BottomTab.Screen
-                name="Notificação"
+                name="Favoritos"
                 component={NotificationScreen}
                 options={{
                     headerShown: true,
                     tabBarIcon: ({color}) => (
-                        <Material name="account" color={color} size={28} />
+                        <Material name="heart-plus" color={color} size={28} />
+                    )
+                }}
+            />
+
+            <BottomTab.Screen
+                name="Carrinho"
+                component={CartScreen}
+                options={{
+                    headerShown: true,
+                    tabBarIcon: ({color}) => (
+                        <Material name="shopping" color={color} size={28} />
                     )
                 }}
             />
