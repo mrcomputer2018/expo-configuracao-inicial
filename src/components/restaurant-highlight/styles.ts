@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native"
 
-export const restaurantHighlightCardStyles = StyleSheet.create({
+export const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         justifyContent: "space-between",
@@ -9,11 +9,20 @@ export const restaurantHighlightCardStyles = StyleSheet.create({
         paddingVertical: 10,
     },
     infoContainer: {
-        flexDirection: "column",
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 10
     },
     image: {
-        width: 100,
-        height: 100,
+        width: 80,
+        height: 80,
         resizeMode: "cover"
+    },
+    name: {
+        fontSize: 16,
+        fontWeight: "bold"
+    },
+    address: {
+         fontSize: 14,
     }
 })

@@ -4,6 +4,7 @@ export const restaurantOpenListStyles = StyleSheet.create({
     containerCard: {
         alignItems: "center",
         justifyContent: "center",
+        marginBottom: 14,
     },
     restaurantCard: {
         width: 384,

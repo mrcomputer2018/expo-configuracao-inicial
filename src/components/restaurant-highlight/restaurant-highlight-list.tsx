@@ -1,5 +1,5 @@
 import { FlatList } from "react-native";
-import { restaurantHighlight } from "../constants/restaurants";
+import { restaurantHighlight } from "../../constants/restaurants";
 import { RestaurantHighlightCard } from "./restaurant- highlight-card";
 
 export function RestaurantHighlightList() {
@@ -9,6 +9,7 @@ export function RestaurantHighlightList() {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => <RestaurantHighlightCard {...item} />}
             scrollEnabled={false}
+            contentContainerStyle={{ marginTop: 10 }}
         />
     );
 }

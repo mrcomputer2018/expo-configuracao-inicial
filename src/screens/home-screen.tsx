@@ -7,9 +7,10 @@ import BannerHomeScreen from "../components/banner-home-screen";
 import { ScrollTitle } from "../components/scrolltitle/index";
 import ScrollCategories from "../components/scroll-categories";
 import RestaurantsOpenList from "../components/restaurants-open-list";
+import { RestaurantHighlightList } from "../components/restaurant-highlight/restaurant-highlight-list";
 
 export default function HomeScreen() {
-       return (
+    return (
         <SafeAreaView style={homeStyles.container}>
             <StatusBar style="auto" />
             <ScrollView
@@ -30,7 +31,7 @@ export default function HomeScreen() {
                 <SearchInput />
 
                 <ScrollTitle.Root>
-                    <ScrollTitle.Title text="Categorias" />
+                    <ScrollTitle.Title text="📋 Categorias" />
                     <ScrollTitle.Button
                         onPress={() => console.log("Clicado!!!")}
                     />
@@ -48,12 +49,13 @@ export default function HomeScreen() {
                 <RestaurantsOpenList />
 
                 <ScrollTitle.Root>
-                    <ScrollTitle.Title text="Destaques do dia" />
+                    <ScrollTitle.Title text="🔥 Destaques do dia" />
                     <ScrollTitle.Button
                         onPress={() => console.log("Clicado!!!")}
                     />
                 </ScrollTitle.Root>
-                
+
+                <RestaurantHighlightList />
             </ScrollView>
         </SafeAreaView>
     );

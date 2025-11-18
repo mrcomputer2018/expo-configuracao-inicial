@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Image, View, Text, Pressable } from "react-native";
-import { restaurantHighlightCardStyles as styles } from "../styles/restaurant-highlight-card-styles";
-import Material from "@expo/vector-icons/MaterialCommunityIcons";
+import { styles } from "./styles";
+import Material from "@expo/vector-icons/MaterialIcons";
 
 
 export function RestaurantHighlightCard({
@@ -13,12 +13,12 @@ export function RestaurantHighlightCard({
         <View style={styles.container}>
             <View style={styles.infoContainer}>
                 <Image
-                    source={item.image ? { uri: item.image } : undefined}
+                    source={item.image}
                     style={styles.image}
                 />
                 <View>
-                    <Text>{item.name}</Text>
-                    <Text>{item.address}</Text>
+                    <Text style={styles.name}>{item.name}</Text>
+                    <Text style={styles.address}>{item.address}</Text>
                 </View>
             </View>
             <Pressable onPress={() => setFavorited(!favorited)}>
@@ -28,7 +28,7 @@ export function RestaurantHighlightCard({
                             ? ("favorite" as any)
                             : ("favorite-border" as any)
                     }
-                    size={16}
+                    size={22}
                     color={favorited ? "red" : "gray"}
                 />
             </Pressable>
